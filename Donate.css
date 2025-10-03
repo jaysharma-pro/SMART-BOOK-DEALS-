@@ -1,0 +1,67 @@
+ body {
+      font-family: Arial, sans-serif;
+     height: 100vh;
+       background: url('/pexels-nitin-arya-386173-1029141\ \(1\).jpg') no-repeat center center/cover;
+       display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .donate-section {
+      background:#fdae03;;
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .donate-section h2 {
+      text-align: center;
+       color: #333;
+      margin-bottom: 15px;
+    }
+
+    .donate-section p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 25px;
+    }
+
+    .donate-form label {
+      display: block;
+      margin: 10px 0 5px;
+      color: #444;
+      font-weight: bold;
+    }
+
+    .donate-form input, 
+        .donate-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .donate-form textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    .donate-form button {
+      width: 100%;
+      padding: 12px;
+      background: #6d2b05;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+       }
+
+    .donate-form button:hover {
+      background: #e6e8eb;
+    }

@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  background: url('/pexels-nitin-arya-386173-1029141\ \(1\).jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg,#222,#444);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #e2b875;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f39c12;
+}
+
+/* Overlay for dark effect */
+.overlay {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color: rgba(236, 117, 6, 0.5);
+  z-index:1;
+}
+
+/* Auth Container */
+.auth-container {
+  position: relative;
+  z-index: 2;
+  background: rgba(209, 130, 57, 0.95);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  width: 350px;
+  text-align: center;
+}
+
+/* Tab Buttons */
+.tab-buttons {
+  display: flex;
+  margin-bottom:30px;
+}
+
+.tab-buttons label {
+  flex: 1;
+  padding: 10px;
+  background: #eee;
+  border-radius: 8px 8px 0 0;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+#tab-login:checked ~ .tab-buttons label[for="tab-login"],
+#tab-signup:checked ~ .tab-buttons label[for="tab-signup"] {
+  background: #fa9b03;
+  color: rgba(235, 217, 217, 0.836);
+}
+
+/* Forms */
+.form {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+#tab-login:checked ~ #login-form,
+#tab-signup:checked ~ #signup-form {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform:translateY(10px);}
+  to {opacity:1; transform:translateY(0);}
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  outline: none;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  background: #f39c12;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: transparent 0.3s ease, transform 0.2s;
+}
+
+.btn-submit:hover {
+  background: #f78f08;
+  transform: scale(1.05);
+}
+
+@media (max-width: 400px) {
+  .auth-container {
+    width: 90%;
+    padding: 30px;
+  }
+}
