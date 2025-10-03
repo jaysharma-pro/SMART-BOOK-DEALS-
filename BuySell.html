@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy & Sell Books - Digi SMART-BookDeals</title>
+  <link rel="stylesheet" href="BuySell.css">
+</head>
+<body>
+
+  <nav>
+   
+      Digi SMART-BookDeals
+    </div>
+    <ul>
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#how">How It Works</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" style="background: url('./book\ sellbuy.jpg') no-repeat center center; background-size: cover; color: white; padding:100px 20px; text-align:center;">
+  <h1>Buy & Sell Books</h1>
+  <p>Get access to affordable books or earn by selling your old ones. A trusted marketplace for students, professionals, and book lovers.</p>
+</section>
+
+  <section>
+    <h2>Choose Your Option</h2>
+    <div class="options">
+      <div class="option-card">
+        <span class="icon">🛒</span>
+        <h3>Buy Books</h3>
+        <p>Browse thousands of books from different genres, authors, and subjects. Affordable and easy to access.</p>
+        <a href="#buy-form">Start Buying</a>
+      </div>
+
+      <div class="option-card">
+        <span class="icon">📦</span>
+        <h3>Sell Books</h3>
+        <p>List your books quickly with details and set your price. Reach genuine buyers easily.</p>
+        <a href="#sell-form">Start Selling</a>
+      </div>
+    </div>
+  </section>
+
+   <!-- Image Gallery for Buying -->
+    <div class="image-gallery">
+      <div class="gallery-title">Available Books</div>
+      <img src="./book1.jpg" alt="Book 1">
+      <img src="./book2.jpg" alt="Book 2">
+      <img src="book3.png" alt="Book 3">
+      <img src="./book4.jpg" alt="Book 4">
+      <img src="./book5.jpg" alt="Book 5">
+      <img src="./book6.jpg" alt="Book 6">
+      <img src="./book7.jpg" alt="Book 7">
+      <img src="./book8.jpg" alt="Book 8">
+      <img src="./book9.jpg" alt="Book 9">
+      <img src="./book10.jpg" alt="Book 10">
+    </div>
+  </section>
+
+  <!-- Buy Form -->
+  <section id="buy-form">
+    <div class="form-container">
+      <h3>Buy Books</h3>
+      <form>
+        <div class="form-group">
+          <label for="book-search">Book Title / Author</label>
+          <input type="text" id="book-search" placeholder="Enter book name or author">
+        </div>
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select id="category">
+            <option>-- Select Category --</option>
+            <option>Science</option>
+            <option>Technology</option>
+            <option>Literature</option>
+            <option>Commerce</option>
+            <option>History</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-submit">Search Books</button>
+      </form>
+    </div>
+  </section>
+
+   <!-- Image Gallery for Selling -->
+    <div class="image-gallery">
+      <div class="gallery-title">Recently Listed Books</div>
+      <img src="./book11'.jpg" alt="Book 11">
+      <img src="./book12.jpg" alt="Book 12">
+      <img src="./book13.jpg" alt="Book 13">
+      <img src="./book14.jpg" alt="Book 14">
+      <img src="./book15.jpg" alt="Book 15">
+      <img src="./book16.jpg" alt="Book 16">
+      <img src="./book17.jpg" alt="Book 17">
+      <img src="./book18.jpg" alt="Book 18">
+      <img src="./book19.jpg" alt="Book 19">
+      <img src="./book20.jpg" alt="Book 20">
+    </div>
+  </section>
+
+
+  <!-- Sell Form -->
+  <section id="sell-form">
+    <div class="form-container">
+      <h3>Sell Your Book</h3>
+      <form>
+        <div class="form-group">
+          <label for="title">Book Title</label>
+          <input type="text" id="title" placeholder="Enter book title">
+        </div>
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input type="text" id="author" placeholder="Enter author name">
+        </div>
+        <div class="form-group">
+          <label for="price">Price (INR)</label>
+          <input type="number" id="price" placeholder="Enter price">
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" placeholder="Brief description about the book"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="upload">Upload Book Image</label>
+          <input type="file" id="upload">
+        </div>
+        <button type="submit" class="btn-submit">Submit Listing</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Digi SMART-BookDeals. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
